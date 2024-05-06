@@ -1,0 +1,388 @@
+@font-face {
+  font-family: IranSans;
+  src: url(../assets/font/IranianSans.ttf);
+}
+body{
+  direction: rtl;
+  font-family: IranSans;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c5c5c5;
+  padding: 5px 20px 0 20px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navItem{
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 16px;
+  transition: all ease-in-out;
+  color: #6B6B6B;
+}
+.navItem li:hover{
+  color: #80AD01;
+  cursor: pointer;
+  font-weight: bold;
+}
+.logoItem{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 100px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  height: 1500px;
+}
+.content{
+  border:  3px dashed #FFFFFF;
+  border-bottom: none;
+  border-radius: 10px;
+  height: 500px;
+}
+.headerContent{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 30px 0 30px;
+}
+.tab{
+  height:65px;
+  width: 474px;
+  background-color: #EFF2E6;
+  border: 1px solid #C6CBB6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.tabButton{
+  color: #6B6B6B;
+  font-size: 16px;
+  margin: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tabActive{
+  background-color: #D9DDCB;
+  padding: 15px 10px 15px 10px;
+  border-radius: 10px;
+}
+.button{
+  height: 56px;
+  width: 161px;
+  background-color: transparent;
+  border: 2px dashed #80AD01;
+  border-radius: 10px;
+  color: #80AD01 ;
+}
+.cartContent{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto ;
+}
+.card{
+  background-color: #FFFFFF;
+  height: 410px;
+  width: 250px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.iconCard{
+  background-color: #ACC294 ;
+  margin-right: 10px;
+  margin-top: 12px;
+  width: 18px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cardPic{
+  width: 165px;
+  height: 148px;
+  margin: auto;
+}
+.cardContent{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8px 0 8px;
+  align-items: center;
+}
+.rate{
+    display: flex;
+    gap: 5px;
+}
+.rate span{
+  font-size: 18px;
+  color: #878787;
+}
+.buttonCard{
+  background-color: #F5F5F5;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  display: flex;
+  gap:10px;
+}
+.buttonCard p{
+  color: #878787;
+  font-size: 14px;
+}
+.discount {
+  color: #878787;
+  direction: ltr;
+  margin-left: 15px;
+  text-decoration-line: line-through;
+}
+.priceContent{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 10px;
+}
+.priceContent div{
+  border: 1.5px solid #80AD01;
+  color: #80AD01;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: -20px;
+  border-radius: 5px;
+  font-size: 23px;
+}
+.priceContent p{
+  color: #80AD01;
+  margin-top: -5px;
+}
+.slider{
+  background-color: #626754;
+  width: 100%;
+  height: 630px;
+  margin: 150px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.sliderContent{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.item{
+  border-radius: 15px;
+  margin: 30px 0 0 50px;
+}
+.sliderImg{
+  width: 800px;
+}
+
+.category{
+  width: 400px;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  gap: 35px;
+
+}
+.categoryItem{
+  width: 190px;
+  height: 190px;
+  background: #E9EEE0;
+  color: #626754;
+  font-weight: bold;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.categoryItem img{
+  margin-right: 50px;
+}
+.productBtn{
+  background: #80AD01;
+  width: 324px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  margin: -40px 200px 0 0;
+}
+
+.arrowPrv{
+  position: absolute;
+  left: 60px;
+  top: 45%;
+  cursor: pointer;
+}
+.arrowNext{
+  position: absolute;
+  right: -15px;
+  top: 45%;
+  cursor: pointer;
+}
+.slide {
+
+  display: none;
+}
+.active {
+  display: block;
+}
+.mainSliderImage{
+  border-radius: 20px;
+  margin: 30px 0 0 80px;
+}
+.manuBar{
+  display: none;
+}
+
+
+
+
+@media (max-width: 700px){
+  .header{
+    flex-direction: row-reverse;
+  }
+ .logoItem , .navItem {
+   display: none;
+ }
+
+ .button{
+   border: none;
+   display: none;
+ }
+ .container{
+   height: 4400px;
+   background-color: rgba(172, 194, 148, 0.26);
+ }
+  .cartContent{
+    display: grid;
+    grid-template-columns: auto auto ;
+  }
+  .card{
+    background-color: #FFFFFF;
+    height: 430px;
+    width: 220px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  .sliderContent{
+    display: flex;
+    flex-direction: column;
+  }
+  .mainSliderImage{
+    width: 380px;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .arrowPrv{
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    cursor: pointer;
+  }
+  .arrowNext{
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    cursor: pointer;
+  }
+  .slider{
+    background-color: #626754;
+    width: 100%;
+    height: 800px;
+    margin: 150px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  .category{
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 40px;
+    gap: 35px;
+
+  }
+  .categoryItem{
+    width: 160px;
+    height: 160px;
+    background: #E9EEE0;
+    color: #626754;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .categoryItem img{
+    margin-right: 50px;
+  }
+  .productBtn{
+    background: #80AD01;
+    width: 324px;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin: 50px 55px 0 0;
+  }
+
+  /*burgerMenu*/
+  .manuBar{
+    color: #878787;
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .burger-menu {
+    position: relative;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 500px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+  }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu ul li {
+    padding: 20px;
+  }
+
+  .menu ul li:last-child {
+    display: flex;
+    gap: 10px;
+  }
+}
